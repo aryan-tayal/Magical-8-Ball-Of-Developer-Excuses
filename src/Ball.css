@@ -1,0 +1,41 @@
+.Ball {
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+  border-radius: 50rem;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(
+    220deg,
+    rgba(74, 70, 70, 1) 15%,
+    rgba(0, 0, 0, 1) 27%,
+    rgb(34, 27, 33) 77%
+  );
+  cursor: pointer;
+  overflow: hidden;
+}
+.Ball > h1 {
+  font-family: "Smokum", cursive;
+  font-size: 4.5rem;
+  position: relative;
+  border-radius: 50rem;
+  color: #fff;
+  background-color: #f7c0c2;
+  padding: 5px 35px;
+}
+.Ball > div {
+  height: 500px;
+  width: 400px;
+  border-radius: 50rem;
+  color: #f7c0c2;
+  background: linear-gradient(220deg, #141212 15%, #131111 27%, #0d0f49 77%);
+  padding: 0 50px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(300px);
+  display: none;
+}
