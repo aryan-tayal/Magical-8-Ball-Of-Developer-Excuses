@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import excuses from "excuses";
 import Ball from "./Ball";
+import CurvedText from "./CurvedText";
 import "./App.css";
 
 const App = () => {
@@ -10,9 +11,9 @@ const App = () => {
   const [excuse, setExcuse] = useState(randomExcuse());
   return (
     <div className="App">
-      <h2 className="App-heading">Magical Ball</h2>
+      <CurvedText text="Magical Ball" />
       <Ball excuse={excuse} handleClick={handleBallClick} />
-      <h2 className="App-heading">Of Excuses</h2>
+      <CurvedText text="Of Excuses" dir={-1} />
       <p className="App-description">
         Never do your developer work again and get out of anything with an iron
         clad excuse. Click the ball to get your excuse.

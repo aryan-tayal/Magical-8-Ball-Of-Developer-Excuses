@@ -20,6 +20,28 @@
   word-spacing: 15px;
   letter-spacing: 2px;
 }
+.App-heading:nth-of-type(2) {
+  color: #fff;
+}
+.App-heading:nth-of-type(1) span:nth-of-type(1),
+.App-heading:nth-of-type(1) span:nth-of-type(6),
+.App-heading:nth-of-type(1) span:nth-of-type(9) {
+  color: #35856e;
+}
+.App-heading:nth-of-type(1) span:nth-of-type(2),
+.App-heading:nth-of-type(1) span:nth-of-type(5),
+.App-heading:nth-of-type(1) span:nth-of-type(12),
+.App-heading:nth-of-type(2) span:nth-of-type(6),
+.App-heading:nth-of-type(2) span:nth-of-type(8) {
+  color: #ef5f28;
+}
+.App-heading:nth-of-type(1) span:nth-of-type(4),
+.App-heading:nth-of-type(1) span:nth-of-type(11),
+.App-heading:nth-of-type(2) span:nth-of-type(2),
+.App-heading:nth-of-type(2) span:nth-of-type(5),
+.App-heading:nth-of-type(2) span:nth-of-type(9) {
+  color: #f7c0c2;
+}
 .App-description {
   color: #f5dad6;
   font-size: 1.1rem;
