@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Smokum&display=swap");
+* {
+  margin: 0;
+  font-family: "Montserrat", cursive;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #35856e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 15px;
+  letter-spacing: 2px;
+}
+.App-description {
+  color: #f5dad6;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  max-width: 300px;
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+}
