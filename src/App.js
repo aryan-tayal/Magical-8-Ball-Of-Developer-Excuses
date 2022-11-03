@@ -1,7 +1,11 @@
+import Ball from "./Ball"
+
 const App = () => {
   return (
-		<h1>Magical 8 Ball of Developer Excuses</h1>
+		<div className="App">
+      <Ball excuse="Some random excuse goes here"/>
+    </div>
   )
 }
 
-export default App
+export default App  
