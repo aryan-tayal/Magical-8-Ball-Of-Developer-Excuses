@@ -4,7 +4,7 @@ import ArcText from "arc-text";
 const CurvedText = ({ text, dir }) => {
   return (
     <h2
-      className="App-heading"
+      className={`App-heading ${dir === -1 ? "animate-down" : "animate-up"}`}
       ref={(ref) => {
         const arcText = new ArcText(ref);
         arcText.arc(250);

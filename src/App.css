@@ -10,8 +10,9 @@
   background: #35856e;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 .App-heading {
   font-size: 2.5rem;
@@ -19,6 +20,8 @@
   text-transform: uppercase;
   word-spacing: 15px;
   letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
 }
 .App-heading:nth-of-type(2) {
   color: #fff;
@@ -51,4 +54,42 @@
   position: absolute;
   bottom: 25%;
   left: 10%;
+}
+.App-bg {
+  --o: 0%;
+  --wh: 0%;
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 100%;
+  background-color: #f7c0c2;
+}
+.App-bg::before,
+.App-bg::after {
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50rem 50rem 0 0;
+  position: absolute;
+}
+.App-bg::before {
+  background-color: #ef5f28;
+  width: 70%;
+  height: 110%;
+  bottom: var(--wh);
+}
+.App-bg::after {
+  background-color: #fffff4;
+  width: 50%;
+  height: 80%;
+  bottom: var(--o);
+}
+.App-opentext {
+  color: #f5dad6;
+  font-size: 1.4rem;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform:translateX(-50%) translateY(-200px);
 }
